@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Integral de Tri&aacute;ngulos</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Calculadora Integral de Tri&aacute;ngulos</h1>
+            <p>An&aacute;lisis completo de un tri&aacute;ngulo a partir de sus tres lados</p>
+        </header>
+        <main class="main">
+            <section class="input-section">
+                <h2>Ingrese las medidas de los lados</h2>
+                <form id="triangleForm">
+                    <div class="input-group">
+                        <label for="sideA">Lado a:</label>
+                        <input type="number" id="sideA" name="sideA" min="1" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="sideB">Lado b:</label>
+                        <input type="number" id="sideB" name="sideB" min="1" step="any" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="sideC">Lado c:</label>
+                        <input type="number" id="sideC" name="sideC" min="1" step="any" required>
+                    </div>
+                    <button type="submit" class="btn-calculate">Calcular</button>
+                </form>
+            </section>
+            <section class="output-section">
+                <div id="results"></div>
+            </section>
+            <section class="options">
+                <button class="option-btn">&Aacute;ngulos</button>
+                <button class="option-btn">Medianas</button>
+                <button class="option-btn">Bisectrices</button>
+                <button class="option-btn">Alturas</button>
+                <button class="option-btn">Per&iacute;metro</button>
+                <button class="option-btn">&Aacute;rea</button>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Desarrollado por Alejandra N&uacute;&ntilde;ez | Calculadora de Tri&aacute;ngulos © 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
